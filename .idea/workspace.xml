@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a078dca-6200-458e-9c33-e20ed09a279e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Pages/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Pages/Register.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/userModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/authRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/dist/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Part/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Part/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,9 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -56,7 +67,17 @@
       <workItem from="1609237622507" duration="2766000" />
       <workItem from="1609262095371" duration="57000" />
       <workItem from="1609309910853" duration="2560000" />
-      <workItem from="1609312543974" duration="359000" />
+      <workItem from="1609312543974" duration="3331000" />
+      <workItem from="1609351508061" duration="5894000" />
+      <workItem from="1609363098863" duration="3178000" />
+      <workItem from="1609396819551" duration="2668000" />
+      <workItem from="1609402522598" duration="1913000" />
+      <workItem from="1609419954850" duration="2727000" />
+      <workItem from="1609430506877" duration="2412000" />
+      <workItem from="1609436089769" duration="2864000" />
+      <workItem from="1609491214619" duration="12343000" />
+      <workItem from="1609504107405" duration="2098000" />
+      <workItem from="1609584489356" duration="4424000" />
     </task>
     <servers />
   </component>
@@ -73,5 +94,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

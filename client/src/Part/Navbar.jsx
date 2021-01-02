@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import {
-    AppBar,
+    AppBar, Button,
     Drawer,
     IconButton,
     List,
@@ -11,6 +11,7 @@ import {
     Typography
 } from "@material-ui/core"
 import MenuIcon from '@material-ui/icons/Menu'
+import {useHistory} from "react-router-dom"
 
 const useStyle = makeStyles((theme) => ({
     menuButton: {
@@ -25,8 +26,37 @@ const useStyle = makeStyles((theme) => ({
 }))
 
 const Navbar = () => {
+
+    const history = useHistory()
     const classes = useStyle()
-    const [openDrawer, setDrawer] = useState(false);
+    const [openDrawer, setDrawer] = useState(false)
+    const arrNavbar = [
+        {
+            path: "/",
+            title: "Home"
+        },
+        {
+            path: "/contact",
+            title: "Contact"
+        },
+        {
+            path: "/about",
+            title: "About"
+        },
+        {
+            path: "/login",
+            title: "Login"
+        },
+        {
+            path: "/register",
+            title: "Register"
+        }
+    ]
+
+    const pushRouter = (item) => {
+        setDrawer(false)
+        history.push(item.path)
+    }
 
     return (
         <div>
@@ -45,9 +75,11 @@ const Navbar = () => {
             <Drawer open={openDrawer} variant="persistent" anchor="left">
                 <SwipeableDrawer onClose={()=>setDrawer(false)} onOpen={()=>setDrawer(true)} open={openDrawer}>
                     <List className={classes.drawer}>
-                        <ListItem button onClick={()=>setDrawer(false)}>
-                            <ListItemText>Главная</ListItemText>
-                        </ListItem>
+                        {arrNavbar.map( (item, index) =>
+                            <ListItem key={index} button onClick={pushRouter.bind(this, item)}>
+                                <ListItemText>{item.title}</ListItemText>
+                            </ListItem>
+                        )}
                     </List>
                 </SwipeableDrawer>
             </Drawer>
